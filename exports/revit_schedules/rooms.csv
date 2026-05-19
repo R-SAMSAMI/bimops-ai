@@ -1,0 +1,57 @@
+﻿Room Schedule 3,,,,,,,,,,,,,,,,,,,,,,,,,,
+Area,Base Finish,Base Offset,Ceiling Finish,Ceiling Height,Comments,Count,Department,Exchange Entity ID,Exchange ID,Export to IFC,Export to IFC As,Floor Finish,IFC Predefined Type,IfcGUID,Image,Level,Limit Offset,Name,Number,Occupancy,Occupant,Perimeter,Unbounded Height,Upper Limit,Volume,Wall Finish
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+185 SF,Vinyl Base,-10' - 11",Open,,,1,,,,By Type,,Concrete,,2gDGg7MA90nQHvffsvVoR2,,L1 - Block 35,0' - 0",Stair,S1,,,60' - 10",87' - 8",Parapet 2,15891.47 CF,Concrete
+180 SF,Vinyl Base,-24' - 11 1/2",Open,,,1,,,,By Type,,Concrete,,2gDGg7MA90nQHvffsvVoOh,,L2,0' - 0",Stair,S3,,,59' - 9",87' - 8 1/2",Parapet 2,15500.45 CF,Concrete
+193 SF,Vinyl Base,-13' - 5 1/2",Open,,,1,,,,By Type,,Concrete,,2gDGg7MA90nQHvffsvVoOY,,L1 - Block 37,0' - 0",Stair,S2,,,62' - 10",87' - 9",Parapet 2,16625.15 CF,Concrete
+62 SF,,0' - 0",,,,1,,,,By Type,,,,2gDGg7MA90nQHvffsvVoU4,,Parking,0' - 0",Elevator,E1,,,31' - 6",87' - 9",Parapet 2,5349.03 CF,
+62 SF,,-13' - 5 1/2",,,,1,,,,By Type,,,,2gDGg7MA90nQHvffsvVoUU,,L1 - Block 37,0' - 0",Elevator,E2,,,31' - 6",87' - 9",Parapet 2,5349.03 CF,
+643 SF,Wood Base,0' - 0",Open,,,1,,,,By Type,,Polished Concrete/LVT,,2gDGg7MA90nQHvffsvVnwM,,L1 - Block 35,-0' - 6",Café,101,Restaurant,Restaurant,196' - 7 7/8",24' - 3",L3,13276.05 CF,Paint
+433 SF,Wood Base,0' - 0",Open,,,1,,,,By Type,,Polished Concrete/LVT,,2gDGg7MA90nQHvffsvVnwf,,L1 - Block 35,-0' - 6",Café Kitchen,102,Restaurant,Restaurant,137' - 3 3/4",10' - 11",M1,4730.96 CF,Paint
+675 SF,Wood Base,0' - 0",Open,,,1,,,,By Type,,Polished Concrete/LVT,,2gDGg7MA90nQHvffsvVnwi,,L1 - Block 35,-2' - 0",Outdoor Covered Dining,103,Restaurant,Restaurant,114' - 7",22' - 9",L3,14316.14 CF,Paint
+1776 SF,N/A,0' - 0",N/A,,,1,,,,By Type,,Varies see Plan,,2gDGg7MA90nQHvffsvVnwZ,,L1 - Block 35,-2' - 0",Pocket Park,104,Outdoor Public,Outdoor Public,225' - 5 5/16",22' - 9",L3,39490.44 CF,N/A
+1485 SF,Vinyl Base,0' - 0",Open,,,1,,,,By Type,,LVT,,2gDGg7MA90nQHvffsvVnwy,,L1 - Block 37,-2' - 0",Commercial/Retail,105,Commercial,Retail,192' - 10 13/16",9' - 6 1/2",L2,14167.37 CF,Paint/WC
+953 SF,Wood Base,0' - 0",Varies see RCP,,,1,,,,By Type,,Terrazzo,,2gDGg7MA90nQHvffsvVnwp,,L1 - Block 37,-0' - 6",Residential Lobby,106,Residential Public,Residential,142' - 8 1/2",35' - 1 1/2",L4,24315.38 CF,Paint/WC
+369 SF,N/A,0' - 0",Open,,,1,,,,By Type,,Concrete,,2gDGg7MA90nQHvffsvVnws,,L1 - Block 37,-2' - 0",Utility,107,,,107' - 7 3/4",9' - 6 1/2",L2,3521.59 CF,Paint
+2303 SF,Vinyl Base,-3' - 6",Open,,,1,,,,By Type,,LVT,,2gDGg7MA90nQHvffsvVnvE,,L1 - Block 43,-0' - 6",Commercial/Retail,108,Commercial,Retail,275' - 6 3/4",21' - 10",L3,35776.87 CF,Paint/WC
+1133 SF,Vinyl Base,0' - 0",Open,,,1,,,,By Type,,LVT,,2gDGg7MA90nQHvffsvVnvD,,L1 - Block 43,-0' - 6",Commercial/Retail,109,Commercial,Retail,207' - 3 7/8",18' - 4",L3,20752.60 CF,Paint/WC
+596 SF,Wood Base,0' - 0",Gyp Board,,,1,,,,By Type,,Polished Concrete,,2gDGg7MA90nQHvffsvVn8Q,,L2,-0' - 6",Corridor,201,,,210' - 8",10' - 3",L3,4985.65 CF,Paint
+839 SF,Wood Base,0' - 0",Open,,,1,,,,By Type,,Polished Concrete/LVT,,2gDGg7MA90nQHvffsvVnF7,,L2,-0' - 6",Live/Work Unit,202,Residential One Story,Residential,118' - 10 1/4",10' - 3",L3,8598.39 CF,Paint
+593 SF,Wood Base,0' - 0",Open,,,1,,,,By Type,,Polished Concrete/LVT,,2gDGg7MA90nQHvffsvVnFQ,,L2,-0' - 6",Studio Unit,203,Residential One Story,Residential,108' - 10 1/8",10' - 3",L3,6077.00 CF,Paint
+569 SF,Wood Base,0' - 0",Open,,,1,,,,By Type,,Polished Concrete/LVT,,2gDGg7MA90nQHvffsvVnFP,,L2,-0' - 6",Two Story Studio Unit,204,Residential Two Story,Residential,114' - 7 13/16",23' - 7",L4,13316.46 CF,Paint
+1105 SF,Wood Base,0' - 0",Open,,,1,,,,By Type,,Polished Concrete/LVT,,2gDGg7MA90nQHvffsvVnFS,,L2,-0' - 6",Live/Work Unit,205,Residential One Story,Residential,152' - 3 1/4",10' - 3",L3,11327.86 CF,Paint
+2425 SF,Vinyl Base,0' - 0",Open,,,1,,,,By Type,,Polished Concrete,,2xiPD91DjD7eXgRU9zn4g3,,L3,-0' - 6",Office Unit,301,Office,Office,264' - 8 3/8",12' - 10",L4,31116.80 CF,Paint/WC
+657 SF,Wood Base,0' - 0",Gyp Board,,,1,,,,By Type,,Polished Concrete,,2xiPD91DjD7eXgRU9zn4fw,,L3,-0' - 6",Corridor,302,,,228' - 1 3/16",12' - 10",L4,7186.35 CF,Paint
+839 SF,Wood Base,0' - 0",Open,,,1,,,,By Type,,Polished Concrete/LVT,,2xiPD91DjD7eXgRU9zn4fW,,L3,-0' - 6",Live/Work Unit,303,Residential One Story,Residential,118' - 10 11/16",12' - 10",L4,10773.53 CF,Paint
+593 SF,Wood Base,0' - 0",Open,,,1,,,,By Type,,Polished Concrete/LVT,,2xiPD91DjD7eXgRU9zn4fd,,L3,-0' - 6",Studio Unit,304,Residential One Story,Residential,108' - 10 1/8",12' - 10",L4,7608.60 CF,Paint
+1145 SF,Wood Base,0' - 0",Open,,,1,,,,By Type,,Polished Concrete/LVT,,2xiPD91DjD7eXgRU9zn4fP,,L3,-0' - 6",Live/Work Unit,306,Residential One Story,Residential,157' - 9 1/8",12' - 10",L4,14600.91 CF,Paint
+1105 SF,Wood Base,0' - 0",Open,,,1,,,,By Type,,Polished Concrete/LVT,,2xiPD91DjD7eXgRU9zn4fS,,L3,-0' - 6",Live/Work Unit,307,Residential One Story,Residential,152' - 3 1/4",12' - 10",L4,14182.85 CF,Paint
+583 SF,Wood Base,0' - 0",Open,,,1,,,,By Type,,Polished Concrete/LVT,,2xiPD91DjD7eXgRU9zn4fJ,,L3,-0' - 6",Live/Work Unit,308,Residential One Story,Residential,117' - 7 21/32",12' - 10",L4,7483.31 CF,Paint
+766 SF,Wood Base,0' - 0",Open,,,1,,,,By Type,,Polished Concrete/LVT,,2xiPD91DjD7eXgRU9zn4fM,,L3,-0' - 6",Live/Work Unit,309,Residential One Story,Residential,132' - 3 25/32",12' - 10",L4,9830.27 CF,Paint
+2325 SF,Vinyl Base,0' - 0",Open,,,1,,,,By Type,,Polished Concrete,,2xiPD91DjD7eXgRU9zn4eo,,L4,-0' - 6",Office Unit,401,Office,Office,249' - 11 3/32",12' - 10",L5,29841.95 CF,Paint/WC
+570 SF,Wood Base,0' - 0",Open,,,1,,,,By Type,,Polished Concrete/LVT,,2xiPD91DjD7eXgRU9zn4yf,,L4,-0' - 6",Two Story Studio Unit,406,Residential Two Story,Residential,114' - 10 1/16",26' - 2",R2,14798.65 CF,Paint
+638 SF,Wood Base,0' - 0",Gyp Board,,,1,,,,By Type,,Polished Concrete,,2xiPD91DjD7eXgRU9zn4yk,,L4,-0' - 6",Corridor,402,,,227' - 7 3/16",12' - 10",L5,6977.20 CF,Paint
+840 SF,Wood Base,0' - 0",Open,,,1,,,,By Type,,Polished Concrete/LVT,,2xiPD91DjD7eXgRU9zn4yi,,L4,-0' - 6",Live/Work Unit,403,Residential One Story,Residential,118' - 6 15/16",12' - 10",L5,10778.51 CF,Paint
+593 SF,Wood Base,0' - 0",Open,,,1,,,,By Type,,Polished Concrete/LVT,,2xiPD91DjD7eXgRU9zn4yY,,L4,-0' - 6",Studio Unit,404,Residential One Story,Residential,108' - 10 1/8",12' - 10",L5,7608.60 CF,Paint
+1146 SF,Wood Base,0' - 0",Open,,,1,,,,By Type,,Polished Concrete/LVT,,2xiPD91DjD7eXgRU9zn4yW,,L4,-0' - 6",Live/Work Unit,407,Residential One Story,Residential,157' - 5 3/8",12' - 10",L5,14605.20 CF,Paint
+1105 SF,Wood Base,0' - 0",Open,,,1,,,,By Type,,Polished Concrete/LVT,,2xiPD91DjD7eXgRU9zn4yc,,L4,-0' - 6",Live/Work Unit,408,Residential One Story,Residential,152' - 3 1/4",12' - 10",L5,14182.85 CF,Paint
+583 SF,Wood Base,0' - 0",Open,,,1,,,,By Type,,Polished Concrete/LVT,,2xiPD91DjD7eXgRU9zn4ya,,L4,-0' - 6",Live/Work Unit,409,Residential One Story,Residential,116' - 7 21/32",12' - 10",L5,7480.73 CF,Paint
+768 SF,Wood Base,0' - 0",Open,,,1,,,,By Type,,Polished Concrete/LVT,,2xiPD91DjD7eXgRU9zn4yQ,,L4,-0' - 6",Live/Work Unit,410,Residential One Story,Residential,132' - 4 5/8",12' - 10",L5,9850.80 CF,Paint
+2234 SF,Vinyl Base,0' - 0",Open,,,1,,,,By Type,,Polished Concrete,,2xiPD91DjD7eXgRU9zn4xp,,L5,-0' - 6",Office Unit,501,Office,Office,235' - 0",12' - 10",R2,28665.07 CF,Paint/WC
+812 SF,Wood Base,0' - 0",Gyp Board,,,1,,,,By Type,,Polished Concrete,,2xiPD91DjD7eXgRU9zn4w8,,L5,-0' - 6",Corridor,502,,,246' - 8 1/16",12' - 10",R2,8529.43 CF,Paint
+304 SF,N/A,0' - 0",N/A,,,1,,,,By Type,,Varies see Plan,,2xiPD91DjD7eXgRU9zn4vC,,L5,25' - 0",Green Roof,503,Outdoor Public,Outdoor Public,90' - 9 21/32",25' - 0",L5,7597.78 CF,N/A
+593 SF,Wood Base,0' - 0",Open,,,1,,,,By Type,,Polished Concrete/LVT,,2xiPD91DjD7eXgRU9zn4v7,,L5,-0' - 6",Studio Unit,504,Residential One Story,Residential,108' - 10 1/8",12' - 10",R2,7608.60 CF,Paint
+804 SF,N/A,0' - 0",N/A,,,1,,,,By Type,,Varies see Plan,,2xiPD91DjD7eXgRU9zn4uw,,L5,25' - 0",Green Roof,505,Outdoor Public,Outdoor Public,145' - 3 1/32",25' - 0",L5,20099.86 CF,N/A
+1105 SF,Wood Base,0' - 0",Open,,,1,,,,By Type,,Polished Concrete/LVT,,2xiPD91DjD7eXgRU9zn4u_,,L5,-0' - 6",Live/Work Unit,506,Residential One Story,Residential,152' - 3 1/4",12' - 10",R2,14182.85 CF,Paint
+915 SF,Wood Base,0' - 0",Open,,,1,,,,By Type,,Polished Concrete/LVT,,2xiPD91DjD7eXgRU9zn4uz,,L5,-0' - 6",Live/Work Unit,507,Residential One Story,Residential,160' - 11 1/32",12' - 10",R2,11736.34 CF,Paint
+10307 SF,N/A,0' - 0",Open,,,1,,,,By Type,,Concrete,,2xiPD91DjD7eXgRU9zn4uY,,Parking,10' - 0",Parking Garage,P01,Parking,Parking,682' - 11 31/32",10' - 0",Parking,103072.98 CF,Concrete
+493 SF,N/A,0' - 0",Open,,,1,,,,By Type,,Concrete,,2xiPD91DjD7eXgRU9zn4uO,,Parking,10' - 0",Utility,P05,,,92' - 4 13/16",10' - 0",Parking,4926.67 CF,Paint
+59 SF,N/A,0' - 0",Open,,,1,,,,By Type,,Concrete,,2xiPD91DjD7eXgRU9zn4uM,,Parking,10' - 0",Machine RM,P02,,,31' - 3 3/4",10' - 0",Parking,594.03 CF,Paint
+57 SF,N/A,0' - 0",Open,,,1,,,,By Type,,Concrete,,2xiPD91DjD7eXgRU9zn4u9,,Parking,10' - 0",Machine RM,P03,,,30' - 10 7/8",10' - 0",Parking,569.13 CF,Paint
+57 SF,Vinyl Base,0' - 0",Open,,,1,,,,By Type,,Concrete,,2xiPD91DjD7eXgRU9zn4uC,,Parking,10' - 0",Storage,P04,,,30' - 11 7/8",10' - 0",Parking,573.05 CF,Paint
+723 SF,Wood Base,0' - 0",Open,,,1,,,,By Type,,Polished Concrete/LVT,,2DrlDkmyDFLerHNnIG0ol0,,L4,1' - 0",Live/Work Loft Unit,405,Residential Two Story,Residential,111' - 0",21' - 6",R1,15296.36 CF,Paint
+849 SF,Wood Base,-2' - 7",Open,,,1,,,,By Type,,Polished Concrete/LVT,,2fKtQCgXvAcPJz91XWt87t,,L2,-0' - 6",Mezzanine Dining,200,Restaurant,Restaurant,157' - 5",12' - 10",L3,10889.71 CF,Paint
+5177 SF,N/A,0' - 0",N/A,,,1,,,,By Type,,Varies see Plan,,3kxrDTva15vBWB9RrmlFaV,,Green Roof Hardscape,8' - 0",Green Roof,R100,Outdoor Public,Outdoor Public,795' - 5 25/32",8' - 0",Green Roof Hardscape,41419.12 CF,N/A
+734 SF,N/A,-6' - 0",N/A,,,1,,,,By Type,,Varies see Plan,,3kxrDTva15vBWB9RrmlFdW,,Green Roof Hardscape,8' - 0",Bandstand,R101,Outdoor Public,Outdoor Public,117' - 1 27/32",14' - 0",Green Roof Hardscape,9425.00 CF,N/A
+116 SF,Vinyl Base,0' - 0",Open,,,1,,,,By Type,,Concrete,,3kxrDTva15vBWB9RrmlFda,,Green Roof Hardscape,8' - 0",Storage,R103,,,46' - 8 1/2",8' - 0",Green Roof Hardscape,925.96 CF,Paint
+204 SF,N/A,0' - 0",N/A,,,1,,,,By Type,,Varies see Plan,,31X2Dh$qb4wv0Ev2mJcDI0,,L5,25' - 0",Private Patio,507A,Outdoor Private,Residential,76' - 7 15/32",25' - 0",L5,5102.47 CF,N/A

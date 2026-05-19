@@ -1,0 +1,23 @@
+# Large Autodesk sample assets kept locally
+*.rvt
+*.rfa
+*.rte
+*.zip
+*.crdownload
+
+# Local generated lakehouse data
+data/bronze/*
+data/silver/*
+data/gold/*
+!data/bronze/.gitkeep
+!data/silver/.gitkeep
+!data/gold/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# Local secrets and Databricks config
+.env
+.databrickscfg

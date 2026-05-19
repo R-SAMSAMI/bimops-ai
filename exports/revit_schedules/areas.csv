@@ -1,0 +1,17 @@
+﻿Area Schedule (Gross Building) 2,,,,,,,,,,,,,,,,,
+Area,Area Type,Comments,Count,Exchange Entity ID,Exchange ID,Export to IFC,Export to IFC As,IFC Predefined Type,IfcGUID,Image,Level,Name,Number,Occupancy Add On,Occupancy Load,Occupancy Load Factor,Perimeter
+,,,,,,,,,,,,,,,,,
+13054 SF,Gross Building Area,,1,,,By Type,,,1l3j4tHyfA_haGHBMn6ppQ,,Parking,Parking Gross,1,,,,507' - 1 7/32"
+10220 SF,Gross Building Area,,1,,,By Type,,,1l3j4tHyfA_haGHBMn6p9g,,L1 - Block 35,Level 1 Gross,2,,,,530' - 11 11/32"
+2486 SF,Exterior Area,,1,,,By Type,,,1l3j4tHyfA_haGHBMn6p9l,,L1 - Block 35,Outdoor Space,3,,,,219' - 0 3/16"
+7747 SF,Gross Building Area,,1,,,By Type,,,1l3j4tHyfA_haGHBMn6pCg,,L2,Level 2 Gross,4,,,,536' - 0 5/32"
+11647 SF,Gross Building Area,,1,,,By Type,,,1l3j4tHyfA_haGHBMn6pFa,,L3,Level 3 Gross,5,,,,549' - 4 29/32"
+11483 SF,Gross Building Area,,1,,,By Type,,,1l3j4tHyfA_haGHBMn6p0M,,L4,Level 4 Gross,6,,,,534' - 6 29/32"
+9051 SF,Gross Building Area,,1,,,By Type,,,1l3j4tHyfA_haGHBMn6p13,,L5,Level 5 Gross,7,,,,591' - 7 1/8"
+7292 SF,Exterior Area,,1,,,By Type,,,1l3j4tHyfA_haGHBMn6p2d,,R2,Green Roof Gross,8,,,,740' - 2 9/32"
+694 SF,Exterior Area,,1,,,By Type,,,21$tDpUWDEtxLZIWIT_3Sa,,L5,Outdoor Area,9,,,,115' - 2 29/32"
+1512 SF,Exterior Area,,1,,,By Type,,,21$tDpUWDEtxLZIWIT_3SX,,L5,Outdoor Area,10,,,,230' - 10 29/32"
+381 SF,Gross Building Area,,1,,,By Type,,,21$tDpUWDEtxLZIWIT_3Oa,,R2,Roof 1 Gross,11,,,,92' - 2"
+403 SF,Gross Building Area,,1,,,By Type,,,21$tDpUWDEtxLZIWIT_3Nj,,R2,Roof 2 Gross,12,,,,87' - 8 3/4"
+403 SF,Gross Building Area,,1,,,By Type,,,21$tDpUWDEtxLZIWIT_3Ng,,R2,Roof 3 Gross,13,,,,107' - 11"
+244 SF,Gross Building Area,,1,,,By Type,,,21$tDpUWDEtxLZIWIT_3Nt,,R2,Roof 4 Gross,14,,,,67' - 9"

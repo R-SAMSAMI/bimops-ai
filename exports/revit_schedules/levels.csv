@@ -1,0 +1,21 @@
+﻿Level Schedule,,,,,,,,,,,,,,,
+Building Story,Count,Elevation,Elevation Base,Export to IFC,Export Type to IFC,Family,Family and Type,Family Thumbnail,IfcGUID,Name,Scope Box,Story Above,Structural,Type,Type IfcGUID
+,,,,,,,,,,,,,,,
+Yes,1,0' - 0",Project Base Point,By Type,Default,Level,Level: Arch_1/4" Head (Symbol Both Ends),,13IqgdyW163BExhxLiEUOc,L1 - Block 43,Levels,Default,No,Arch_1/4" Head (Symbol Both Ends),3y1$q1RAvA0w4F6HOneJWo
+Yes,1,18' - 10",Project Base Point,By Type,Default,Level,Level: Arch_1/4" Head (Symbol Both Ends),,13IqgdyW163BExhxLiEUOh,L3,Levels,Default,No,Arch_1/4" Head (Symbol Both Ends),3y1$q1RAvA0w4F6HOneJWo
+Yes,1,-5' - 11",Project Base Point,By Type,Default,Level,Level: Arch_1/4" Head (Symbol Both Ends),,13IqgdyW163BExhxLiEUV8,L1 - Block 35,Levels,Default,No,Arch_1/4" Head (Symbol Both Ends),3y1$q1RAvA0w4F6HOneJWo
+Yes,1,8' - 1",Project Base Point,By Type,Default,Level,Level: Arch_1/4" Head (Symbol Both Ends),,13IqgdyW163BExhxLiEUV9,L2,Levels,Default,No,Arch_1/4" Head (Symbol Both Ends),3y1$q1RAvA0w4F6HOneJWo
+Yes,1,32' - 2",Project Base Point,By Type,Default,Level,Level: Arch_1/4" Head (Symbol Both Ends),,13IqgdyW163BExhxLiEUVA,L4,Levels,Default,No,Arch_1/4" Head (Symbol Both Ends),3y1$q1RAvA0w4F6HOneJWo
+Yes,1,45' - 6",Project Base Point,By Type,Default,Level,Level: Arch_1/4" Head (Symbol Both Ends),,13IqgdyW163BExhxLiEUVB,L5,Levels,Default,No,Arch_1/4" Head (Symbol Both Ends),3y1$q1RAvA0w4F6HOneJWo
+Yes,1,47' - 8",Project Base Point,By Type,Default,Level,Level: Arch_1/4" Head,,13IqgdyW163BExhxLiEUVZ,Block 37 - Parapet,None,Default,No,Arch_1/4" Head,2JF4e6axWHqu3u0C1FZlmf
+Yes,1,51' - 2",Project Base Point,By Type,Default,Level,Level: Arch_1/4" Head,,13IqgdyW163BExhxLiEUVa,Block 43 - Parapet,None,Default,No,Arch_1/4" Head,2JF4e6axWHqu3u0C1FZlmf
+Yes,1,54' - 8",Project Base Point,By Type,Default,Level,Level: Arch_1/4" Head,,13IqgdyW163BExhxLiEUVb,Block 39 - Parapet,None,Default,No,Arch_1/4" Head,2JF4e6axWHqu3u0C1FZlmf
+Yes,1,-16' - 11",Project Base Point,By Type,Default,Level,Level: Arch_1/4" Head (Symbol Both Ends),,02eZgBbC55BP7_P0PPHQQ3,Parking,Levels,Default,No,Arch_1/4" Head (Symbol Both Ends),3y1$q1RAvA0w4F6HOneJWo
+Yes,1,58' - 10",Project Base Point,By Type,Default,Level,Level: Arch_1/4" Head (Symbol Both Ends),,02eZgBbC55BP7_P0PPHQNe,R2,Levels,Default,No,Arch_1/4" Head (Symbol Both Ends),3y1$q1RAvA0w4F6HOneJWo
+Yes,1,63' - 6",Project Base Point,By Type,Default,Level,Level: Arch_1/4" Head (Symbol Both Ends),,02eZgBbC55BP7_P0PPHQH3,Parapet,Levels,Default,No,Arch_1/4" Head (Symbol Both Ends),3y1$q1RAvA0w4F6HOneJWo
+Yes,1,-3' - 5 1/2",Project Base Point,By Type,Default,Level,Level: Arch_1/4" Head (Symbol Both Ends),,1M6jzI1Db9pAeCDuENUUag,L1 - Block 37,None,Default,No,Arch_1/4" Head (Symbol Both Ends),3y1$q1RAvA0w4F6HOneJWo
+Yes,1,68' - 10",Project Base Point,By Type,Default,Level,Level: Arch_1/4" Head (Symbol Both Ends),,2BByksCr15Dg4KZP6dXlby,R3,Levels,Default,No,Arch_1/4" Head (Symbol Both Ends),3y1$q1RAvA0w4F6HOneJWo
+Yes,1,70' - 10",Project Base Point,By Type,Default,Level,Level: Arch_1/4" Head (Symbol Both Ends),,2BByksCr15Dg4KZP6dXlbz,Parapet 2,Levels,Default,No,Arch_1/4" Head (Symbol Both Ends),3y1$q1RAvA0w4F6HOneJWo
+Yes,1,5' - 6",Project Base Point,By Type,Default,Level,Level: Arch_1/4" Head (Symbol Both Ends),,2gDGg7MA90nQHvffsvVny0,M1,Levels,Default,No,Arch_1/4" Head (Symbol Both Ends),3y1$q1RAvA0w4F6HOneJWo
+Yes,1,52' - 8",Project Base Point,By Type,Default,Level,Level: Arch_1/4" Head (Symbol Both Ends),,2RT2fqAQ9B_x8VHdhSmfMS,R1,Levels,Default,No,Arch_1/4" Head (Symbol Both Ends),3y1$q1RAvA0w4F6HOneJWo
+Yes,1,59' - 11",Project Base Point,By Type,Default,Level,Level: Arch_1/4" Head,,2$2NOVgxvFUxyaMBSGgnMr,Green Roof Hardscape,Levels,Default,No,Arch_1/4" Head,2JF4e6axWHqu3u0C1FZlmf
