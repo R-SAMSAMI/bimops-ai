@@ -4,6 +4,8 @@ BIMOps AI is a Revit-to-Databricks lakehouse prototype that turns BIM schedule e
 
 The project uses Autodesk Revit sample model data, Python, and Databricks to demonstrate how BIM metadata can move from design files into a modern data workflow:
 
+![Autodesk Snowdon Towers cover sheet](screenshots/cover.jpg)
+
 ```text
 Revit schedules -> Bronze raw tables -> Silver cleaned tables -> Gold analytics tables -> Dashboard insights
 ```
