@@ -31,6 +31,10 @@ Large Revit model files are not committed to this repository. Only exported sche
 
 ## Dashboard Preview
 
+### Dashboard Overview
+
+![BIMOps AI dashboard overview](screenshots/dashboard0.jpg)
+
 ### Model Inventory
 
 ![Model inventory dashboard](screenshots/dashboard1.jpg)
