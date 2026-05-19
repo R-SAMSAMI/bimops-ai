@@ -33,6 +33,10 @@ Large Revit model files are not committed to this repository. Only exported sche
 
 ## Dashboard Preview
 
+### LinkedIn Project Poster
+
+![BIMOps AI LinkedIn poster](outputs/bimops-ai-linkedin-poster.png)
+
 ### Dashboard Overview
 
 ![BIMOps AI dashboard overview](screenshots/dashboard0.jpg)
