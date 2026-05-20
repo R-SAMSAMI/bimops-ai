@@ -359,6 +359,14 @@ How many doors are fire-rated versus non-fire-rated?
 
 Keep API keys private. Add your OpenAI key through the notebook widget or a Databricks secret, not in GitHub.
 
+### AI Query Demo
+
+The repository includes a short recording of the natural-language BIM query workflow:
+
+[Watch the AI query demo](screenshots/Recording1_GenieQA.mp4)
+
+The demo shows how a user can ask a BIM lakehouse question, generate SQL over Gold tables, execute the query in Databricks, and receive a plain-English answer for AEC stakeholders.
+
 ## Example SQL
 
 ```sql
