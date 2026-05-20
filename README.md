@@ -298,6 +298,8 @@ BIMOps-AI/
     revit_schedules/          Exported Revit schedule CSVs
   notebooks/
     databricks_bimops_starter.py
+    ask_bim_lakehouse_openai.py
+    bimops_copilot_assistant.py
   screenshots/
     dashboard*.jpg            Databricks dashboard screenshots
     *.jpg                     Revit model screenshots
@@ -359,9 +361,10 @@ The project also includes an optional Databricks notebook for natural-language q
 
 ```text
 notebooks/ask_bim_lakehouse_openai.py
+notebooks/bimops_copilot_assistant.py
 ```
 
-This notebook lets a user ask BIM questions in plain English, uses OpenAI to generate read-only SQL over the Gold tables, executes the query in Databricks, and summarizes the result for AEC stakeholders.
+The first notebook demonstrates a lightweight question-to-SQL workflow. The Copilot notebook expands that into an assistant-style experience: it discovers the available Gold tables, generates safe read-only SQL, runs the query in Databricks, summarizes the result, and recommends a practical BIM/data-quality next action.
 
 Example questions:
 
