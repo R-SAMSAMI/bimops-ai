@@ -338,6 +338,27 @@ notebooks/databricks_bimops_starter.py
 
 Detailed Databricks steps are in [docs/databricks_quickstart.md](docs/databricks_quickstart.md).
 
+## Ask The BIM Lakehouse With OpenAI
+
+The project also includes an optional Databricks notebook for natural-language querying:
+
+```text
+notebooks/ask_bim_lakehouse_openai.py
+```
+
+This notebook lets a user ask BIM questions in plain English, uses OpenAI to generate read-only SQL over the Gold tables, executes the query in Databricks, and summarizes the result for AEC stakeholders.
+
+Example questions:
+
+```text
+Which BIM categories have the weakest readiness scores?
+Which fields have the worst metadata completeness?
+Which level has the most room area?
+How many doors are fire-rated versus non-fire-rated?
+```
+
+Keep API keys private. Add your OpenAI key through the notebook widget or a Databricks secret, not in GitHub.
+
 ## Example SQL
 
 ```sql
