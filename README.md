@@ -193,6 +193,17 @@ gold_asset_identity_readiness
 gold_metadata_quality
 ```
 
+## Professional Data Product Documentation
+
+Additional project documentation expands the prototype beyond dashboards into a stakeholder-ready AEC data product:
+
+- [Data Dictionary](docs/data_dictionary.md): plain-language definitions for Gold tables, columns, metrics, and example questions.
+- [Data Governance](docs/data_governance.md): source traceability, ownership model, quality rules, refresh cadence, limitations, and AI query governance.
+- [Stakeholder Use Cases](docs/stakeholder_use_cases.md): how BIM managers, designers, project managers, MEP teams, structural teams, owner/facilities teams, and data teams can use the lakehouse.
+- [AI Query Layer](docs/ai_query_layer.md): architecture and safety design for natural-language querying over governed Gold tables.
+- [Dashboard Spec](docs/dashboard_spec.md): dashboard layout and visual design plan.
+- [Databricks Quickstart](docs/databricks_quickstart.md): steps for running the project inside Databricks.
+
 ## Dashboard Sections
 
 ### 1. Model Inventory
