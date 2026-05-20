@@ -61,6 +61,10 @@ Large Revit model files are not committed to this repository. Only exported sche
 
 ![BIM data quality dashboard](screenshots/dashboard5.jpg)
 
+### Lakehouse Governance
+
+![Lakehouse governance dashboard](screenshots/dashboard6.jpg)
+
 ## Revit Model Context
 
 ![Snowdon Towers 3D view](screenshots/3d.jpg)
