@@ -296,6 +296,10 @@ BIMOps-AI/
     revit_export_guide.md     Revit schedule export guide
   exports/
     revit_schedules/          Exported Revit schedule CSVs
+  app/
+    app.py                    Streamlit Databricks App for BIMOps Copilot
+    app.yaml                  Databricks Apps startup command
+    requirements.txt          App dependencies
   notebooks/
     databricks_bimops_starter.py
     ask_bim_lakehouse_openai.py
@@ -354,6 +358,33 @@ notebooks/databricks_bimops_starter.py
 5. Build the dashboard using the Gold tables.
 
 Detailed Databricks steps are in [docs/databricks_quickstart.md](docs/databricks_quickstart.md).
+
+## BIMOps Copilot Databricks App
+
+The project also includes a Streamlit app for Databricks Apps:
+
+```text
+app/
+```
+
+The app provides a chat-style interface for asking BIM lakehouse questions, previewing the generated SQL, reviewing Databricks query results, and receiving a plain-English answer with recommended next actions.
+
+Required app configuration:
+
+```text
+OPENAI_API_KEY
+DATABRICKS_SERVER_HOSTNAME
+DATABRICKS_HTTP_PATH
+DATABRICKS_TOKEN
+```
+
+Optional:
+
+```text
+BIMOPS_DATABASE=bimops_ai
+```
+
+See [app/README.md](app/README.md) for deployment notes.
 
 ## Ask The BIM Lakehouse With OpenAI
 
