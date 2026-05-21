@@ -19,12 +19,14 @@
 
 # COMMAND ----------
 
-# MAGIC %pip install openai
+# MAGIC %pip install --upgrade "typing_extensions>=4.12.2" "openai>=1.80.0"
 
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC If Databricks asks you to restart Python after installing `openai`, click **restart**, then continue from the next cell.
+# MAGIC This upgrades `typing_extensions` because some Databricks runtimes include an older version that can break the OpenAI import.
+# MAGIC
+# MAGIC After this cell finishes, click **restart Python** if Databricks asks. Then continue from the next cell.
 
 # COMMAND ----------
 
