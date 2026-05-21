@@ -19,14 +19,86 @@
 
 # COMMAND ----------
 
-# MAGIC %pip install --upgrade "typing_extensions>=4.12.2" "openai>=1.80.0"
+# MAGIC %pip install openai
 
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC This upgrades `typing_extensions` because some Databricks runtimes include an older version that can break the OpenAI import.
-# MAGIC
-# MAGIC After this cell finishes, click **restart Python** if Databricks asks. Then continue from the next cell.
+# MAGIC If Databricks asks you to restart Python after installing `openai`, click **restart**, then continue from the next cell.
+
+# COMMAND ----------
+
+import typing
+import typing_extensions
+
+for name in [
+    "List",
+    "Dict",
+    "Tuple",
+    "Set",
+    "FrozenSet",
+    "Optional",
+    "Union",
+    "Any",
+    "Callable",
+    "Iterable",
+    "Iterator",
+    "Sequence",
+    "Mapping",
+    "MutableMapping",
+    "Literal",
+    "Type",
+    "Generic",
+    "Protocol",
+    "TypeAlias",
+    "TypeGuard",
+    "ParamSpec",
+    "Concatenate",
+]:
+    if not hasattr(typing_extensions, name) and hasattr(typing, name):
+        setattr(typing_extensions, name, getattr(typing, name))
+
+if not hasattr(typing_extensions, "TypeIs"):
+    if hasattr(typing_extensions, "TypeGuard"):
+        typing_extensions.TypeIs = typing_extensions.TypeGuard
+    elif hasattr(typing, "TypeGuard"):
+        typing_extensions.TypeIs = typing.TypeGuard
+    else:
+        class TypeIs:
+            def __class_getitem__(cls, item):
+                return bool
+        typing_extensions.TypeIs = TypeIs
+
+if hasattr(typing_extensions, "__all__") and "TypeIs" not in typing_extensions.__all__:
+    typing_extensions.__all__.append("TypeIs")
+
+if not hasattr(typing_extensions, "TypeAliasType"):
+    class TypeAliasType:
+        def __init__(self, name, value, *, type_params=()):
+            self.__name__ = name
+            self.__value__ = value
+            self.__type_params__ = type_params
+
+        def __repr__(self):
+            return self.__name__
+
+    typing_extensions.TypeAliasType = TypeAliasType
+
+if hasattr(typing_extensions, "__all__") and "TypeAliasType" not in typing_extensions.__all__:
+    typing_extensions.__all__.append("TypeAliasType")
+
+if not hasattr(typing_extensions, "deprecated"):
+    def deprecated(*args, **kwargs):
+        def decorator(obj):
+            return obj
+        return decorator
+
+    typing_extensions.deprecated = deprecated
+
+if hasattr(typing_extensions, "__all__") and "deprecated" not in typing_extensions.__all__:
+    typing_extensions.__all__.append("deprecated")
+
+print("typing_extensions patched. TypeIs exists:", hasattr(typing_extensions, "TypeIs"))
 
 # COMMAND ----------
 
