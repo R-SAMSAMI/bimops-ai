@@ -139,7 +139,7 @@ CURATED_TABLE_DESCRIPTIONS = {
 }
 
 
-def list_gold_tables() -> list[str]:
+def list_gold_tables():
     tables_df = spark.sql(f"SHOW TABLES IN {DATABASE_NAME}")
     return [
         row["tableName"]
@@ -148,11 +148,11 @@ def list_gold_tables() -> list[str]:
     ]
 
 
-def get_table_columns(table_name: str) -> list[str]:
+def get_table_columns(table_name):
     return [field.name for field in spark.table(f"{DATABASE_NAME}.{table_name}").schema.fields]
 
 
-def get_table_context() -> dict:
+def get_table_context():
     context = {}
     for table_name in sorted(list_gold_tables()):
         context[table_name] = {
@@ -217,7 +217,7 @@ def clean_sql(sql: str) -> str:
     return cleaned.rstrip(";")
 
 
-def referenced_tables(sql: str) -> set[str]:
+def referenced_tables(sql):
     known_tables = set(TABLE_CONTEXT.keys())
     matches = set()
     lowered_sql = sql.lower()
@@ -299,7 +299,7 @@ def generate_sql(question: str) -> str:
     return validate_sql(response.output_text)
 
 
-def summarize_result(question: str, sql: str, rows: list[dict]) -> str:
+def summarize_result(question, sql, rows):
     system_prompt = dedent(
         """
         You are BIMOps Copilot, an AI assistant for BIM, AEC data, and Databricks lakehouse analytics.
@@ -445,4 +445,3 @@ run_log_df = spark.createDataFrame(
 run_log_df.write.mode("append").format("delta").saveAsTable(f"{DATABASE_NAME}.copilot_run_log")
 
 display(spark.table(f"{DATABASE_NAME}.copilot_run_log").orderBy(F.desc("run_timestamp")).limit(10))
-
