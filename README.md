@@ -369,16 +369,22 @@ app/
 
 The app provides a chat-style interface for asking BIM lakehouse questions, previewing the generated SQL, reviewing Databricks query results, and receiving a plain-English answer with recommended next actions.
 
-Required app configuration:
+### Copilot App Demo
+
+![BIMOps Copilot Databricks App demo](screenshots/copilot-app-demo.gif)
+
+Required Databricks App resource:
 
 ```text
-OPENAI_API_KEY
-DATABRICKS_SERVER_HOSTNAME
-DATABRICKS_HTTP_PATH
-DATABRICKS_TOKEN
+Resource type: SQL warehouse
+Warehouse: Serverless Starter Warehouse
+Permission: Can use
+Resource key: sql-warehouse
 ```
 
-Optional:
+The OpenAI API key is entered privately in the app sidebar during a demo.
+
+Optional app variable:
 
 ```text
 BIMOPS_DATABASE=bimops_ai
