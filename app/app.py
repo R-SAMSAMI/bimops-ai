@@ -6,14 +6,14 @@ from textwrap import dedent
 import pandas as pd
 import streamlit as st
 from databricks import sql
+from databricks.sdk import WorkspaceClient
+from databricks.sdk.core import Config, oauth_service_principal
 from openai import OpenAI
 
 
 DATABASE_NAME = os.getenv("BIMOPS_DATABASE", "bimops_ai")
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
-DATABRICKS_SERVER_HOSTNAME = os.getenv("DATABRICKS_SERVER_HOSTNAME", "")
-DATABRICKS_HTTP_PATH = os.getenv("DATABRICKS_HTTP_PATH", "")
-DATABRICKS_TOKEN = os.getenv("DATABRICKS_TOKEN", "")
+DATABRICKS_HOST = os.getenv("DATABRICKS_HOST", "")
+DATABRICKS_WAREHOUSE_ID = os.getenv("DATABRICKS_WAREHOUSE_ID", "")
 
 
 CURATED_TABLE_DESCRIPTIONS = {
@@ -100,20 +100,43 @@ st.markdown(
 
 def connection_ready():
     required = {
-        "OPENAI_API_KEY": OPENAI_API_KEY,
-        "DATABRICKS_SERVER_HOSTNAME": DATABRICKS_SERVER_HOSTNAME,
-        "DATABRICKS_HTTP_PATH": DATABRICKS_HTTP_PATH,
-        "DATABRICKS_TOKEN": DATABRICKS_TOKEN,
+        "DATABRICKS_HOST": DATABRICKS_HOST,
+        "DATABRICKS_WAREHOUSE_ID": DATABRICKS_WAREHOUSE_ID,
+        "DATABRICKS_CLIENT_ID": os.getenv("DATABRICKS_CLIENT_ID", ""),
+        "DATABRICKS_CLIENT_SECRET": os.getenv("DATABRICKS_CLIENT_SECRET", ""),
     }
     missing = [name for name, value in required.items() if not value]
     return missing
 
 
+@st.cache_data(ttl=3600)
+def get_warehouse_connection_details():
+    workspace = WorkspaceClient()
+    warehouse = workspace.warehouses.get(id=DATABRICKS_WAREHOUSE_ID)
+    if not warehouse.odbc_params:
+        raise ValueError("The selected SQL warehouse did not return connection details.")
+
+    return {
+        "server_hostname": warehouse.odbc_params.hostname,
+        "http_path": warehouse.odbc_params.path,
+    }
+
+
+def credential_provider():
+    config = Config(
+        host=DATABRICKS_HOST,
+        client_id=os.getenv("DATABRICKS_CLIENT_ID"),
+        client_secret=os.getenv("DATABRICKS_CLIENT_SECRET"),
+    )
+    return oauth_service_principal(config)
+
+
 def get_connection():
+    details = get_warehouse_connection_details()
     return sql.connect(
-        server_hostname=DATABRICKS_SERVER_HOSTNAME,
-        http_path=DATABRICKS_HTTP_PATH,
-        access_token=DATABRICKS_TOKEN,
+        server_hostname=details["server_hostname"],
+        http_path=details["http_path"],
+        credentials_provider=credential_provider,
     )
 
 
@@ -206,7 +229,7 @@ def validate_sql(query, table_context):
 
 
 def generate_sql(question, table_context):
-    client = OpenAI(api_key=OPENAI_API_KEY)
+    client = OpenAI(api_key=st.session_state.openai_api_key)
     system_prompt = dedent(
         f"""
         You are BIMOps Copilot, an AEC data assistant working with a Databricks lakehouse.
@@ -241,7 +264,7 @@ def generate_sql(question, table_context):
 
 
 def summarize_result(question, generated_sql, result_df):
-    client = OpenAI(api_key=OPENAI_API_KEY)
+    client = OpenAI(api_key=st.session_state.openai_api_key)
     rows = result_df.head(20).to_dict(orient="records")
 
     response = client.responses.create(
@@ -307,9 +330,19 @@ if missing_config:
     st.error("Missing required app configuration: " + ", ".join(missing_config))
     st.stop()
 
+if "openai_api_key" not in st.session_state:
+    st.session_state.openai_api_key = ""
+
 with st.sidebar:
     st.subheader("BIMOps Lakehouse")
     st.caption(f"Database: `{DATABASE_NAME}`")
+    st.caption(f"Warehouse resource: `{DATABRICKS_WAREHOUSE_ID}`")
+    st.session_state.openai_api_key = st.text_input(
+        "OpenAI API key",
+        value=st.session_state.openai_api_key,
+        type="password",
+        help="Used only in this app session. Do not paste keys into screenshots.",
+    )
     st.markdown("**Sample questions**")
     sample_questions = [
         "Which BIM categories have the weakest readiness scores, and what should the team improve first?",
@@ -358,6 +391,10 @@ for message in st.session_state.messages:
             st.dataframe(message["data"], use_container_width=True)
 
 if question:
+    if not st.session_state.openai_api_key:
+        st.warning("Paste your OpenAI API key in the sidebar first.")
+        st.stop()
+
     st.session_state.messages.append({"role": "user", "content": question})
     with st.chat_message("user"):
         st.markdown(question)

@@ -1,1 +1,7 @@
 command: ["streamlit", "run", "app.py"]
+
+env:
+  - name: BIMOPS_DATABASE
+    value: "bimops_ai"
+  - name: DATABRICKS_WAREHOUSE_ID
+    valueFrom: sql-warehouse
